@@ -24,8 +24,10 @@ while True:
     quantidade = palavra_oculta.count('_') # definindo quantidade de letras na palavra oculta
 
     if quantidade == 0:
-        print('PARABÉNS VOCÊ \033[1;33]')
+        print('PARABÉNS VOCÊ \033[1;32mVENCEU\033[m!!!!! 🥳🥳🥳')
+        break
     elif vidas == 0:
+        print('POXA, VOCÊ \033[1;31mPERDEU\033[m. 😢')
         break
 
     indices = []
@@ -35,7 +37,8 @@ while True:
     # 4º) VERIFICANDO SE A LETRA ESTÁ
     if not letra_in_palavra(letra_escolhida, palavra_escolhida):
         vidas -= 1
-        print('VOCÊ ERROU TENTE NOVAMENTE!')
+        print(f'VOCÊ \033[1;31mERROU\033[m TENTE NOVAMENTE! Você ainda tem {vidas} vidas.') if vidas > 1 else None
+        print(f'VOCÊ \033[1;31mERROU\033[m TENTE NOVAMENTE! Você ainda tem {vidas} vida.') if vidas == 1 else None
         continue
 
     print(f'Boa! A letra \'{letra_escolhida}\' está na palavra.')
@@ -44,12 +47,12 @@ while True:
     for index_enumerate, letras_percorridas  in enumerate(PALAVRA_SEPARADA): # Se a letra tiver na palavra, ele vai percorrer novamente para verificar onde está
         if letras_percorridas == letra_escolhida: # Aqui é onde ele verifica se a letra do momento é igual a letra escolhida. E pega o vetor letra da palavra pelo indice
             indices.append(index_enumerate)
-            # print(letra_escolhida)
+            
             palavra_oculta.pop(index_enumerate)
             palavra_oculta.insert(index_enumerate, letra_escolhida)
             
-            # print(f'Indices para substituir letra: {indices}')
-    print(' '.join(palavra_oculta).strip())
+            print(f'\n======== CENTRAL PARA ENTENDER O CODIGO ========\nPalavra Oculta: {palavra_oculta}\nIndices para substituir letra: {indices}\nLetra escolhida: {letra_escolhida}\n')
+    print('   '.join(palavra_oculta).strip().capitalize())
     
     # if indices:
     #     for k in indices: # for para remover
