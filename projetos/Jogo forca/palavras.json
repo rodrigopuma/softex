@@ -1,0 +1,41 @@
+[
+  {
+    "geometria": [
+      "paralelepipedo",
+      "triangulo",
+      "quadrado",
+      "retangulo",
+      "circulo",
+      "cubo"
+    ]
+  },
+  { "frutas": ["maca", "banana", "laranja", "pera", "uva", "abacaxi"] },
+  { "programacao": ["python", "java", "javascript", "csharp", "ruby", "php"] },
+  { "cores": ["vermelho", "azul", "verde", "amarelo", "preto", "branco"] },
+  { "animais": ["gato", "cachorro", "elefante", "tigre", "leao", "girafa"] },
+  {
+    "esportes": ["futebol", "basquete", "volei", "tenis", "natacao", "ciclismo"]
+  },
+  { "pais": ["brasil", "argentina", "japao", "canada", "italia", "australia"] },
+  {
+    "profissoes": [
+      "professor",
+      "medico",
+      "engenheiro",
+      "advogado",
+      "pintor",
+      "programador"
+    ]
+  },
+  {
+    "instrumentos": [
+      "violao",
+      "piano",
+      "bateria",
+      "flauta",
+      "saxofone",
+      "guitarra"
+    ]
+  },
+  { "veiculos": ["carro", "moto", "bicicleta", "caminhao", "onibus", "aviao"] }
+]
