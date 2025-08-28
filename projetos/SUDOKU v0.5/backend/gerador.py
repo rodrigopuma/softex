@@ -1,9 +1,5 @@
 import json
 
-NUMEROS = (1, 2, 3, 4, 5, 6, 7, 8, 9)
-LISTA_OBJ = [n for n in range(1, 82)]
-lista_temp = []
-
 def criar_base_jogo(ARQUIVO='./jogo.json'): 
     with open(ARQUIVO, 'r', encoding='utf-8') as archive:
         jogo = json.load(archive)
@@ -81,33 +77,3 @@ def gerar_tabuleiro(dificuldade: str= "facil"):
         # não pode repetir na mesma linha
         # pass
     # return list[list[int]]
-
-def validar_jogada(
-        tabuleiro: list[list[int]], linha: int,
-        coluna: int, numero: int
-        ):
-    """_summary_
-
-    Args:
-        tabuleiro (list[list[int]]): _description_
-        linha (int): _description_
-        coluna (int): _description_
-        numero (int): _description_
-
-    Returns:
-        bool: _description_
-    """
-    
-    # Verificar o bloco inteiro
-    
-    
-    
-    # Verificar a linha inteira
-    
-    # Percorrer a coluna inteira
-    
-    return bool
-
-
-
-gerar_tabuleiro("")
